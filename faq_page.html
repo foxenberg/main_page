@@ -1,0 +1,222 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<style>
+
+    .unit-icon {
+
+        padding-right: 16px;
+
+    }
+
+ 
+
+  .accordion__wrap {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+        margin: 10%;
+        align-content: center;
+
+    }
+
+ 
+
+    .accordion__wrap>h2 {
+
+        margin-bottom: 30px;
+        font-style: unset;
+        font-family: sans-serif;
+        color: white;
+        
+
+    }
+
+    .accordion {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 15px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 25px 30px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .accordion__title {
+        cursor: pointer;
+        font-weight: 800;
+        position: relative;
+        padding-right: 20px;
+    }
+
+    .accordion__title:after {   
+        width: 11px;
+        height: 7px;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 8.5px;
+    }
+
+               
+
+    .accordion:hover .accordion__title:after {
+        background-color: #868686;
+    }
+
+
+    .accordion__body {
+        margin-top: 10px;
+        display: none;
+    }
+
+ 
+
+    .accordion_opened .accordion__body {
+
+        display: block;
+
+    }
+
+ 
+
+    .accordion_opened .accordion__title:after {
+
+        transform: rotateZ(180deg);
+    }
+
+
+</style>
+
+
+<div class="banner">
+    <div class="navbar">
+        <img src="logo.png" class="logo">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="price_page.html">Цены</a></li>
+            <li><a href="about_page.html">О зоопарке</a></li>
+            <li><a href="photo_page.html">Фотографии</a></li>
+            <li><a href="faq_page.html">FAQ</a></li>
+            
+        </ul>
+
+    </div>
+
+    <div class="accordion__wrap" style="margin-top: 5%">
+
+        <h2>Часто задаваемые вопросы</h2>
+     
+         <div class="accordion">
+     
+            <div class="accordion__title">Почему в зоопарк нельзя с собакой? Даже с очень-очень маленькой собакой?</div>
+     
+             <div class="accordion__body">
+     
+            
+     
+                  Риск нападения на свободно гуляющих птиц. Время от времени по зоопарку свободно гуляют птицы – павлины и цесарки. 
+                 Ситуация "птицы в свободном выгуле + собаки" - потенциально опасны и для птиц, и для собак. Конечно, птицы гуляют непостоянно. 
+                 Но невозможно на этой неделе пускать с собаками, так как птицы не гуляют, а на следующей неделе - не пускать.
+                  А потом опять пускать и т.д. Тут политика партии должна быть однозначной: если мы хотя бы время от времени выпускаем птиц, то никаких собак быть не должно.
+     
+             </div>
+     
+         </div>
+     
+      
+     
+        <div class="accordion">
+     
+       <div class="accordion__title">Почему в зоопарке не везде скошена трава?</div>
+     
+             <div class="accordion__body">
+                Все это – важные меры по улучшению состояния почв и поддержанию местного биоразнообразия. 
+                Частые покосы на низкую высоту истощают травы, не дают корневой системе в достаточной мере «напитаться». 
+                Регулярное кошение необходимо только злаковым газонам, причем, с поддержанием высоты в 5-6 см.
+     
+             </div>
+     
+         </div>
+     
+      
+     
+        <div class="accordion">
+       <div class="accordion__title">Почему в зоопарке запрещено кормить животных?</div>
+             <div class="accordion__body">
+                Потому что у нас нет уверенности, что корм, предназначенный, например, для жирафа, не попадет в желудок, например, капибары. 
+                Ведь продукты безвредные для одних животных, могут быть опасны для других. 
+                К тому же, разнятся способы нарезки и подачи корма: кому-то режут кружочками, кому-то кубиками, кому-то мелко шинкуют, кому-то дают крупными кусками. 
+                Все это делается с учетом особенностей строения и функционирования ЖКТ конкретного вида животных.
+     
+             </div>
+     
+         </div>
+     
+      
+       <div class="accordion">
+     
+       <div class="accordion__title"> Почему зоопарк не принимает животных из природы?</div>
+     
+             <div class="accordion__body">
+     
+                 Зоопарк не является реабилитационным центром для диких животных. 
+                Как муниципальное учреждение зоопарк осуществляет деятельность в полном соответствии с Уставом, 
+                согласно которому цели зоопарка - содержание, показ животных, просветительская и развлекательная деятельность. 
+     
+             </div>
+     
+         </div>
+     
+      
+     
+       <div class="accordion">
+     
+       <div class="accordion__title"> Где в зоопарке разрешено курить?</div>
+     
+             <div class="accordion__body">
+     
+                Зоопарк является свободной от курения зоной. На картах Зоопарка вы можете найти три места, 
+                предназначенных для курения: у причала водных автобусов, на берегу рядом с Медвежьим замком и за рестораном ”Пукки”.
+     
+     
+             </div>
+     
+         </div>
+     
+                     <div class="accordion">
+     
+       <div class="accordion__title"> Остались вопросы или есть предложения</div>
+     
+             <div class="accordion__body">
+                <a href="mailto:testZoo@rapidtables.com">Напишите нам</a>
+     
+             </div>
+     
+         </div></div>
+     
+ </div>
+
+
+
+<script>
+
+    var accordionTitles = document.querySelectorAll('.accordion__title');
+    accordionTitles.forEach(title => {
+        title.onclick = function () {
+            var parent = this.closest('.accordion');
+            parent
+                .classList
+                .toggle('accordion_opened');
+        };
+    });
+
+</script>
